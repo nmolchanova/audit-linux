@@ -25,7 +25,7 @@ end
 coreo_agent_audit_profile 'linux-patch-baseline' do
     action :define
     selectors ['check-linux']
-    profile 'https://github.com/dev-sec/linux-patch-baseline/archive/master.zip'
+    profile 'https://github.com/coolguru/linux-patch-baseline/archive/master.zip'
     timeout 120
 end
 
