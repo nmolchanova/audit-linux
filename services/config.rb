@@ -2,8 +2,8 @@ coreo_agent_selector_rule 'check-linux' do
     action :define
     timeout 120
     control 'check-linux' do
-        describe command('uname') do
-        its('stdout') { should eq "Linux\n" }
+        describe os.linux? do
+            it { should eq true }
         end
     end
 end
