@@ -3,8 +3,7 @@ variables:
       required: false
       type: array
       default:
-        - linux-baseline 
-        - cis-dil-benchmark
+        - linux-baseline
         - linux-patch-baseline
 
   FILTERED_OBJECTS:
